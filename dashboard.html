@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | PragyanAI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">✦</span><span>PragyanAI</span></a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="study-planner.html">Study Planner</a>
+        <a href="quiz-generator.html">Quiz Generator</a>
+        <a href="ai-assistant.html">AI Assistant</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <main>
+      <section class="section dashboard-shell">
+        <div class="dashboard-top">
+          <div>
+            <h2>Study dashboard</h2>
+            <p>Track focus, goals, and momentum from one workspace.</p>
+          </div>
+          <div class="dashboard-chip">Updated now</div>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat">
+            <h3 id="streak-value">7 days</h3>
+            <p>Streak</p>
+          </div>
+          <div class="stat">
+            <h3 id="focus-value">82%</h3>
+            <p>Focus score</p>
+          </div>
+          <div class="stat">
+            <h3 id="quiz-value">24</h3>
+            <p>Quizzes done</p>
+          </div>
+          <div class="stat">
+            <h3 id="goals-left-value">3</h3>
+            <p>Goals left</p>
+          </div>
+        </div>
+
+        <div class="dashboard-panels">
+          <div class="section panel-card">
+            <h3>Weekly progress</h3>
+            <div class="progress-bar"><span id="progress-fill"></span></div>
+            <p id="progress-label">72% of your weekly target completed.</p>
+          </div>
+
+          <div class="section panel-card">
+            <h3>Study goals</h3>
+            <form id="goal-form" class="goal-form">
+              <input id="goal-input" placeholder="Add a new goal" />
+              <button class="btn btn-primary" type="submit">Add</button>
+            </form>
+            <ul class="list" id="goal-list"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 PragyanAI.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

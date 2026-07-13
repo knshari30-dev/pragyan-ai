@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Assistant | PragyanAI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">✦</span><span>PragyanAI</span></a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="study-planner.html">Study Planner</a>
+        <a href="quiz-generator.html">Quiz Generator</a>
+        <a href="ai-assistant.html" class="active">AI Assistant</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <main>
+      <section class="section assistant-shell">
+        <div class="assistant-header">
+          <div>
+            <h2>PragyanAI Chat</h2>
+            <p>Ask anything about your studies and get a helpful response.</p>
+          </div>
+          <div class="assistant-badges">
+            <span>💡 Explain</span>
+            <span>📝 Quiz</span>
+            <span>📚 Summaries</span>
+          </div>
+        </div>
+
+        <div id="chat-window" class="chat-window">
+          <div class="message assistant-msg">
+            <strong>PragyanAI</strong>
+            <p>Hello! I can explain topics, create quizzes, summarize notes, and help you study smarter. Ask me anything.</p>
+          </div>
+        </div>
+
+        <div class="quick-prompts">
+          <button class="prompt-chip" data-prompt="Explain photosynthesis in simple terms">Explain a topic</button>
+          <button class="prompt-chip" data-prompt="Create 5 flashcards for the periodic table">Create flashcards</button>
+          <button class="prompt-chip" data-prompt="Summarize my notes on algebra in three bullet points">Summarize notes</button>
+        </div>
+
+        <form id="assistant-form" class="chat-form">
+          <textarea id="assistant-input" placeholder="Ask for a summary, explanation, flashcards, or quiz ideas"></textarea>
+          <button class="btn btn-primary" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 PragyanAI.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

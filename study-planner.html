@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Planner | PragyanAI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">✦</span><span>PragyanAI</span></a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="study-planner.html" class="active">Study Planner</a>
+        <a href="quiz-generator.html">Quiz Generator</a>
+        <a href="ai-assistant.html">AI Assistant</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>Weekly study planner</h2>
+        <div class="grid-2">
+          <form id="planner-form">
+            <div class="form-row">
+              <label for="task-input">Add a study task</label>
+              <input id="task-input" placeholder="e.g. Review algebra chapter" />
+            </div>
+            <button class="btn btn-primary" type="submit">Add task</button>
+          </form>
+          <div>
+            <h3>Planned focus</h3>
+            <ul class="list" id="task-list">
+              <li>Read economics notes</li>
+              <li>Practice 20 flashcards</li>
+              <li>Finish geometry worksheet</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 PragyanAI.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
